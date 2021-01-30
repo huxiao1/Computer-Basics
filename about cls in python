@@ -1,0 +1,16 @@
+class Hello():
+
+    def __init__(self, b, c):
+        self.b = b
+        self.c = c
+
+    def h1(self):
+        print ('hello 1111')
+
+    @classmethod
+    def h2(cls):
+        print ('hello 22222')
+        cls(1, 2).h1()
+
+Hello.h2()
+所以，cls这个参数表示自身类，它的作用有：调用类的属性，类的方法，实例化对象等。最后再说一下：类方法可以同时被对象和类本身调用！
